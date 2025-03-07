@@ -53,8 +53,9 @@
         };
       };
     });
-    packages = forEachSupportedSystem ({pkgs, ...}: {
-      rp-fancontrol = import ./default.nix {rustPlatform = pkgs.rustPlatform;};
+    packages = forEachSupportedSystem ({pkgs, ...}: rec {
+      rp-fancontrol = pkgs.callPackage ./default.nix {};
+      default = rp-fancontrol;
     });
   };
 }
