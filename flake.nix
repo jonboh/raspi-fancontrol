@@ -54,8 +54,8 @@
       };
     });
     packages = forEachSupportedSystem ({pkgs, ...}: rec {
-      rp-fancontrol = pkgs.callPackage ./default.nix {};
-      default = rp-fancontrol;
+      raspi-fancontrol = pkgs.callPackage ./default.nix {};
+      default = raspi-fancontrol;
     });
   };
 }
