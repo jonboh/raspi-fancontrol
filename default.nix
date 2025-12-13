@@ -8,7 +8,7 @@ rustPlatform.buildRustPackage rec {
 
   src = ./.;
 
-  cargoHash = "sha256-0RbO+vT94jK4oiZnDJaBwCyfTg60iaTkLxMsLv+wbQo=";
+  cargoHash = "sha256-zgxP4Che6yPgQY/Lp657RjPYG4jTqijkIzkVzALuUkU=";
 
   meta = with lib; {
     description = "A controller for raspberry fans connected to the PWM GPIO pins";
